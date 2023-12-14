@@ -1,0 +1,97 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout"
+	controllerName="de.octavia.kleinehelden.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'de/octavia/kleinehelden/model/formatter'
+	}">
+
+	<Page 
+		title="Kleine Helden Shop - Warenkorb: 0"
+		titleAlignment="Center">
+		<layout:FixFlex>
+			<layout:fixContent>
+				<form:Form >
+					<form:layout>
+						<form:ResponsiveGridLayout >
+
+						</form:ResponsiveGridLayout>
+					</form:layout>
+					<form:FormContainer>
+						<form:FormElement >
+							<form:label>
+								<Label text="Name" required="true"></Label>
+							</form:label>
+							<form:fields>
+								<TextArea ></TextArea>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement >
+							<form:label>
+								<Label text="Geschlecht" required="true"></Label>
+							</form:label>
+							<form:fields>
+								<RadioButtonGroup >
+									<RadioButton text="Junge"></RadioButton>
+									<RadioButton text="Mädchen"></RadioButton>
+								</RadioButtonGroup>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement >
+							<form:label>
+								<Label text="Buchgröße" required="true"></Label>
+							</form:label>
+							<form:fields>
+								<Select >
+									<items>
+										<core:Item text="18x18" key="18x18"></core:Item>
+										<core:Item text="20x20" key="20x20"></core:Item>
+									</items>
+								</Select>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement >
+							<form:label>
+								<Label text="Geschichte" required="true"></Label>
+							</form:label>
+							<form:fields>
+								<Select >
+									<items>
+										<core:Item text="Piraten" key="Piraten"></core:Item>
+										<core:Item text="Umwelt" key="Umwelt"></core:Item>
+										<core:Item text="Schule" key="Schule"></core:Item>
+									</items>
+								</Select>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement >
+							<form:label>
+								<Label text="Widmung" required="false"></Label>
+							</form:label>
+							<form:fields>
+								<TextArea ></TextArea>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement >
+							<form:label>
+								<Label text="Als Geschenk verpacken?" required="false"></Label>
+							</form:label>
+							<form:fields>
+								<CheckBox text="(Zusatzkosten von 5€)"></CheckBox>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement >
+							<form:fields>
+								<Button text="Zum Warenkorb hinzufügen" type="Accept"></Button>
+							</form:fields>
+						</form:FormElement>
+					</form:FormContainer>
+				</form:Form>
+			</layout:fixContent>
+		</layout:FixFlex>
+	</Page>
+	
+
+</mvc:View>

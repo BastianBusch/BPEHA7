@@ -1,0 +1,16 @@
+{
+  "generator-ui5-ts-app": {
+    "namespace": "de.octavia.kleinehelden",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.120.1",
+    "author": "BastianBusch",
+    "initrepo": false,
+    "tstypes": "@openui5/types",
+    "tstypesVersion": "1.120.1",
+    "appId": "de.octavia.kleinehelden",
+    "appURI": "de/octavia/kleinehelden",
+    "cdnDomain": "sdk.openui5.org",
+    "defaultTheme": "sap_horizon",
+    "gte11150": true
+  }
+}
